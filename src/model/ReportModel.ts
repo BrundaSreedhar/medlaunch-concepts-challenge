@@ -8,11 +8,10 @@ class ReportModel {
   private readonly filename = 'reports.json';
 
   /**
-   * Retrieve all reports with embedded data
+   * Retrieve all reports with nested data
    */
   public async retrieveAllReports(): Promise<IReportModel[]> {
     const reports = await DBUtil.readFile(this.filename);
-    // Ensure all reports have empty arrays if not present
     return reports.map((report: IReportModel) => ({
       ...report,
       comments: report.comments || [],
@@ -41,7 +40,7 @@ class ReportModel {
   }
 
   /**
-   * Create a new report with empty embedded arrays
+   * Create a new report
    */
   public async createReport(report: IReportModel): Promise<IReportModel> {
     const reports = await DBUtil.readFile(this.filename);
@@ -73,7 +72,6 @@ class ReportModel {
       ...reportData,
       reportId: existingReport.reportId,
       updatedAt: new Date().toISOString(),
-      // Preserve embedded arrays if not being updated
       comments: reportData.comments !== undefined ? reportData.comments : existingReport.comments || [],
       reportEntries: reportData.reportEntries !== undefined ? reportData.reportEntries : existingReport.reportEntries || [],
       attachments: reportData.attachments !== undefined ? reportData.attachments : existingReport.attachments || []
