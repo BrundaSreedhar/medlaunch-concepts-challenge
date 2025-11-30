@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Nov 29 Report",
+    "description": "Summarizes all the activities Nov 1 through Nov 29, 2025",
+    "reportId": "7ce62c185d035346e48343a9ed5b49e2",
+    "createdAt": "2025-11-30T00:47:01.330Z",
+    "comments": [
+      {
+        "commentId": "fe73d25e75558ad43f1a4c7146aa87f3",
+        "reportId": "7ce62c185d035346e48343a9ed5b49e2",
+        "commentedBy": "anonymous",
+        "text": "this report looks great!",
+        "createdAt": "2025-11-30T00:48:45.153Z"
+      }
+    ],
+    "reportEntries": [
+      {
+        "reportEntryId": "0aff74e8c0c431c7836680d35b8ba11e",
+        "reportId": "7ce62c185d035346e48343a9ed5b49e2",
+        "text": "first report entry",
+        "createdBy": "system",
+        "createdAt": "2025-11-30T00:47:35.839Z"
+      }
+    ],
+    "attachments": [
+      {
+        "attachmentId": "0b57004ba5f58db68c9fd2dd99993212",
+        "reportId": "7ce62c185d035346e48343a9ed5b49e2",
+        "attachmentUrl": "7ce62c185d035346e48343a9ed5b49e2/c55863aa9503b92b5e1c5d6d0d012801.png",
+        "attachmentType": "image/png",
+        "attachmentName": "Screenshot 2025-11-20 at 9.08.28 AM.png",
+        "attachmentSize": 327933,
+        "createdAt": "2025-11-30T00:49:38.077Z"
+      },
+      {
+        "attachmentId": "f8e924a282021f76fcdb42cbcf71c674",
+        "reportId": "7ce62c185d035346e48343a9ed5b49e2",
+        "attachmentUrl": "7ce62c185d035346e48343a9ed5b49e2/74751ec15916299f66fbe55648cf343b.png",
+        "attachmentType": "image/png",
+        "attachmentName": "Screenshot 2025-11-29 at 1.51.04â¯PM.png",
+        "attachmentSize": 234134,
+        "createdAt": "2025-11-30T01:13:27.098Z"
+      }
+    ],
+    "updatedAt": "2025-11-30T01:13:27.103Z"
+  }
+]
